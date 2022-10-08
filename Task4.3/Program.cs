@@ -24,18 +24,18 @@ namespace Task4._3
             while (c1 <= numberA)
             {
                 countA++;
-                c1 = c1 + numberC;
+                c1 += numberC;
             }
             while (c2 <= numberB)
             {
                 countB++;
-                c2 = c2 + numberC;
+                c2 += numberC;
             }
             int count = 1; int sum = 0;
             while (count <= countA )
             {
                 count++;
-                sum = sum + countB;
+                sum += countB;
             }
             Console.WriteLine("В прямоугольник со сторонами A и B влезло квадратов со стороной С: {0}", sum);
             Console.ReadKey();

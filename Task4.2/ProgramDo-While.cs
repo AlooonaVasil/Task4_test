@@ -11,7 +11,7 @@ namespace Task4._2
         static void Main(string[] args)
         {
             Console.WriteLine("Программа последовательность + и - чисел");
-            Console.WriteLine("Вводите целые числа. Программа завершится, когда будет введено число 0.");
+            Console.WriteLine("Вводите целые числа (через Enter). Программа завершится, когда будет введено число 0.");
             int number;
             int positiveCount = 0;
             int negativeCount = 0;
@@ -23,8 +23,12 @@ namespace Task4._2
 
             } while (number!= 0);
 
-            if (negativeCount > positiveCount) Console.WriteLine("Отрицательных ({0}) больше чем положительных ({1})", negativeCount,positiveCount);
-            else if (negativeCount < positiveCount) Console.WriteLine("Положительных ({0}) больше чем отрицательных ({1})", positiveCount, negativeCount);
+            if (negativeCount > positiveCount) 
+                Console.WriteLine("Отрицательных ({0}) больше чем положительных ({1})", negativeCount,positiveCount);
+            else if (negativeCount < positiveCount) 
+                Console.WriteLine("Положительных ({0}) больше чем отрицательных ({1})", positiveCount, negativeCount);
+            else 
+                Console.WriteLine("Положительных и отрицательных чисел равное количество ({0})", positiveCount);
             Console.ReadKey();
         }
     }
